@@ -1,0 +1,38 @@
+.e-dy {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #f00;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+.e-zj {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #f00;
+    border-left: 100px solid transparent;
+}
+
+.e-rj {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #f00;
+    border-left: 100px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+.e-db {
+    width: 0;
+    height: 0;
+    border-top: 170px solid #f00;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+.e-dj{
+    width: 0;
+    height: 0;
+    border-top: 100px solid #f00;
+    border-left: 200px solid transparent;
+    border-right: 130px solid transparent;
+}
