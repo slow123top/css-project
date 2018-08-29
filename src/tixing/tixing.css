@@ -1,0 +1,7 @@
+.tixing {
+    width: 100px;
+    height: 0;
+    border-bottom: 50px solid;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent
+}
