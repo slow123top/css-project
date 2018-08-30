@@ -1,0 +1,19 @@
+.tooltip {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.tooltip::before {
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 15px solid;
+}

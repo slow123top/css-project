@@ -1,56 +1,38 @@
 body {
-    padding: 10rem;
+    padding: 5rem;
 }
 
-div {
-    margin: 5rem;
-}
-
-.wbx {
+.wjx {
     position: relative;
-    width: 100px;
-    border-top: 50px solid;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-}
-
-.wbx::before {
-    content: '';
-    position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 50px solid;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    top: -100px;
-    left: -20px;
+    border-top: 30px solid;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
 }
 
-.lbx {
-    position: relative;
-    width: 100px;
-    height: 60px;
-    background: #000;
-}
-
-.lbx::before {
+.wjx::before {
+    position: absolute;
+    top: -30px;
+    left: -40px;
     content: "";
     width: 0;
     height: 0;
-    position: absolute;
-    top: -40px;
-    border-bottom: 40px solid;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
+    border-top: 30px solid;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(72deg);
 }
 
-.lbx::after {
+.wjx::after {
+    position: absolute;
+    top: -30px;
+    left: -40px;
     content: "";
     width: 0;
     height: 0;
-    position: absolute;
-    bottom: -40px;
-    border-top: 40px solid;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
+    border-top: 30px solid;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    transform: rotate(-68deg);
 }
