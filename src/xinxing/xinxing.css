@@ -1,0 +1,28 @@
+body {
+    padding: 5rem;
+}
+
+.xinxing {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 50px solid;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-radius: 50%;
+    transform: rotate(25deg)
+}
+
+.xinxing::before {
+    position: absolute;
+    top: -43px;
+    left: -37px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 50px solid;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg)
+}
