@@ -36,3 +36,12 @@ body {
     border-right: 40px solid transparent;
     transform: rotate(-68deg);
 }
+
+div~p {
+    background: green;
+    font-size: 2rem;
+}
+
+p.test {
+    font-size: 3rem;
+}

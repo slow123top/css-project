@@ -1,0 +1,59 @@
+body {
+    padding: 5rem;
+}
+
+div {
+    /* margin: 2rem; */
+}
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    border: 10px solid #f00;
+    border-radius: 50%;
+    opacity: .8;
+}
+.pie-parent{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 50%;
+    opacity: .7;
+}
+.pie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 50%;
+    opacity: .7;
+    clip: rect(0, 200px, 200px, 100px);
+    overflow: hidden;
+}
+
+.pie::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #f00;
+    border-radius: 50%;
+    opacity: .7;
+    clip: rect(0, 100px, 200px, 0px);
+    transform: rotate(120deg);
+}
+.pie::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border-radius: 50%;
+    opacity: .7;
+    clip: rect(0, 100px, 200px, 0px);
+    transform: rotate(90deg);
+}
