@@ -1,3 +1,22 @@
+/* 饼状图转圈 */
+@keyframes gundong {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 body {
     padding: 5rem;
 }
@@ -14,7 +33,8 @@ div {
     border-radius: 50%;
     opacity: .8;
 }
-.pie-parent{
+
+.pie-parent {
     position: relative;
     width: 200px;
     height: 200px;
@@ -22,6 +42,7 @@ div {
     border-radius: 50%;
     opacity: .7;
 }
+
 .pie {
     position: absolute;
     top: 0;
@@ -33,6 +54,8 @@ div {
     opacity: .7;
     clip: rect(0, 200px, 200px, 100px);
     overflow: hidden;
+    animation: gundong 500ms infinite;
+    animation-timing-function: linear;
 }
 
 .pie::before {
@@ -46,6 +69,7 @@ div {
     clip: rect(0, 100px, 200px, 0px);
     transform: rotate(120deg);
 }
+
 .pie::after {
     content: "";
     position: absolute;

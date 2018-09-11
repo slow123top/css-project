@@ -1,0 +1,91 @@
+@keyframes rainbow {
+    0% {
+        background: #000;
+    }
+    50% {
+        background: #f00;
+    }
+    100% {
+        background: #ff0;
+    }
+}
+
+/* 球体掉落 */
+
+@keyframes drop {
+    0% {
+        bottom: 0;
+        left:0;
+    }
+    10% {
+        bottom: 90%;
+        left: 10%;
+    }
+    20% {
+        bottom: 0;
+        left: 20%;
+    }
+    30% {
+        bottom: 70%;
+        left: 30%;
+    }
+    40% {
+        bottom: 0;
+        left: 40%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    60% {
+        bottom: 0;
+        left: 60%;
+    }
+    70% {
+        bottom: 20%;
+        left: 70%;
+    }
+    80% {
+        bottom: 0;
+        left: 80%;
+    }
+    90% {
+        bottom: 10%;
+        left: 90%;
+    }
+    100% {
+        bottom: 0;
+        left: 100%;
+    }
+}
+
+.expend {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border-radius: 50%;
+}
+
+.expend:hover {
+    animation: 1s rainbow forwards;
+}
+
+.circle-parent {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    border-radius: 50%;
+    bottom: 200px;
+    animation: drop 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-iteration-count: infinite
+}
