@@ -9,6 +9,12 @@
             "request": "launch",
             "name": "启动程序",
             "program": "${workspaceFolder}\\nodejs\\countBits.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "替换字母",
+            "program": "${workspaceFolder}\\nodejs\\replaceWithPosition.js"
         }
     ]
 }
