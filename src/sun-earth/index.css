@@ -1,0 +1,65 @@
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  100% {
+    transform: translateX(400px) rotate(859.4deg);
+  }
+}
+
+.road {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.road > .sun {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background: #fff000;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.road > .sun::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  border-radius: 100% 0 0 0;
+}
+
+.road > .earth {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 50px;
+  background: #000;
+  border-radius: 50%;
+  transform-origin: 70px 10px;
+  animation: orbit 3s linear infinite;
+}
+
+.road > .earth::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  border-radius: 100% 0 0 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display</title>
+    <style>
+        .father {
+            width: 150px;
+            background-color: #cd0000;
+            white-space: nowrap;
+            padding: 2px;
+        }
+
+        .child {
+            display: inline-block;
+            background-color: #f0f3f9;
+            width: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div style="display: block;">block块级元素</div>
+        <div style="display: inline;">内联元素</div>
+        <div style="display: inline-table;">内联表格元素</div>
+        <div style="display: inline-block;">内联块级元素</div>
+        <div style="display: inline-flex;">内联弹性样式</div>
+        <div style="display: list-item">内联条目样式</div>
+    </div>
+    <div class="father">
+        <span class="child">
+            问君能有几多愁 恰似一江春水向东流
+        </span>
+    </div>
+</body>
+
+</html>
