@@ -1,0 +1,19 @@
+div{
+    position: relative;
+}
+img{
+    content: url(./bg.jpg);
+}
+img::after {
+    content: attr(alt);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    transform: translateY(100%);
+    transition: .2s;
+}
+
+img:hover::after {
+    transform: translateY(0);
+}

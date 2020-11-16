@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@keyframes dot {
+  33% {
+    transform: translateY(-2em);
+  }
+  66% {
+    transform: translateY(-1em);
+  }
+}
+
+.box {
+  width: 256px;
+  height: 256px;
+  text-align: justify;
+}
+
+.box > .bar:nth-child(2n+1) {
+  height: 30px;
+  background: orange;
+}
+
+.box > .bar:nth-child(2n) {
+  height: 32px;
+  background: green;
+}
+
+.box::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+}
+
+.box::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+}
+
+.bar {
+  display: inline-block;
+  width: 20px;
+}
+
+/* 正在加载中  动画 */
+dot {
+  display: inline-block;
+  height: 1em;
+  line-height: 1;
+  text-align: left;
+  vertical-align: -.25em;
+  overflow: hidden;
+}
+
+dot::before {
+  display: block;
+  content: '...\A..\A.';
+  white-space: pre;
+  animation: dot 1s infinite step-start both;
+}
