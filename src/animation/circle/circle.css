@@ -8,7 +8,7 @@
     border-left-color: rgba(0, 0, 0, .6);
     border-bottom-color: rgba(0, 0, 0, .8);
     animation: circleRotate 2s ease 0.1s normal infinite;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 @keyframes circleRotate {
