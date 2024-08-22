@@ -74,6 +74,22 @@
         transform: rotate(90deg);
     }
 }
+@keyframes ShanXing{
+    25%{
+        background-color: #fff;
+    }
+    50%{
+
+    }
+    75%{
+
+    }
+    100%{
+
+    }
+}
+
+
 .single-zfx-child{
     content: '';
     width: 0;
